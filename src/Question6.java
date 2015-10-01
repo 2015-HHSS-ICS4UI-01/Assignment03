@@ -40,7 +40,6 @@ public class Question6 {
     public static void main(String[] args) {
         
         int[] n = {35, 74, 19};
-        
         Question6 test = new Question6();
         
         //test.bucketSort(n);

@@ -2,7 +2,32 @@
 
 a) 72
 
-searches through the set of numbers starting at 23, until 72 is found or until all numbers have been seen
-since 23 is less than 72, program checks the next number
-since 27 is less than 72, program checks the next number
-since
+Sequential Search:
+program takes in two variables: an array of numbers and the number to find in the array (72)
+searches through the array of numbers starting at position 0, until 72 is found or until all numbers have been seen
+if 72 is found, return position of 72 in the array to the user
+if not found, return -1 to the user
+since 0 (23) is less than 72, program checks the next number
+since 1 (27) is less than 72, program checks the next number
+since 2 (30) is less than 72, program checks the next number
+since 3 (34) is less than 72, program checks the next number
+since 4 (41) is less than 72, program checks the next number
+since 5 (51) is less than 72, program checks the next number
+since 6 (55) is less than 72, program checks the next number
+since 7 (57) is less than 72, program checks the next number
+since 8 (60) is less than 72, program checks the next number
+since 9 (67) is less than 72, program checks the next number
+since 10 (72) is equal to the number the program was searching for, program returns its position, 10, to the user
+
+Binary Search:
+
+program takes in 4 variables: the array of numbers, the number to find, the starting position of the array and the ending position
+if starting point is greater than the ending point, return -1 to the user
+since starting point is less than the ending point, program tries to find the middle of the array instead
+find the middle of the array by subtracting the starting point from the ending point, then dividing by 2
+program subtracts 0 from 13, and divides that by 2 for an answer of 6.
+the program begins to check the array starting at position 6.
+if the number at position 6 of the array is equal to the number to be found, return the position number to the user
+since number at 6 is 55, program instead checks if 55 is greater than or less than 72
+since 55 is less than 72, program returns the same number to find, array, and ending point, but sets its start to 7 (the middle of the array (6) plus 1)
+program subtracts 7 from 13 and divides by 2 for an answer of
