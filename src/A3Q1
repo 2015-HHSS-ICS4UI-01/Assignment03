@@ -1,0 +1,33 @@
+A3Q1: 
+[23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96]
+To begin, the for loop begins at the beginning of the array .
+It goes through every number in the array until it find the place in the array
+
+a)  Find 72.
+    Is 23 equal to 72? No. Move to the next spot in the array.
+    Is 27 equal to 72? No. Move to the next spot in the array.
+    Is 30 equal to 72? No. Move to the next spot in the array.
+    Is 34 equal to 72? No. Move to the next spot in the array.
+    Is 41 equal to 72? No. Move to the next spot in the array.
+    Is 51 equal to 72? No. Move to the next spot in the array.
+    Is 55 equal to 72? No. Move to the next spot in the array.
+    Is 57 equal to 72? No. Move to the next spot in the array.
+    Is 60 equal to 72? No. Move to the next spot in the array.
+    Is 67 equal to 72? No. Move to the next spot in the array.
+    Is 72 equal to 72? Yes. Return the position in the array it is in. Return 10.
+
+b)  Find 41.
+    Is 23 equal to 41? No. Move to the next spot in the array.
+    Is 27 equal to 41? No. Move to the next spot in the array.
+    Is 30 equal to 41? No. Move to the next spot in the array.
+    Is 34 equal to 41? No. Move to the next spot in the array.
+    Is 41 equal to 41? Yes. Return the position in the array it is in. Return 4.
+
+c)  Find 50
+    Is 23 equal to 50? No. Move to the next spot in the array.
+    Is 27 equal to 50? No. Move to the next spot in the array.
+    Is 30 equal to 50? No. Move to the next spot in the array.
+    Is 34 equal to 50? No. Move to the next spot in the array.
+    Is 41 equal to 50? No. Move to the next spot in the array.
+    Is 51 equal to 50? Since 51 is greater than 51, return -1, meaning that the inputted number is not in the array.
+    
