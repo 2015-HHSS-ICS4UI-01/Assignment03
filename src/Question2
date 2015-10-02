@@ -1,0 +1,31 @@
+2) 25, 30, 20, 80, 40, 60
+
+program creates a boolean to use to check if numbers have been switched around
+program starts at position 0, loops through every number in the array repeatedly, while numbers are being swapped
+if the number at the program's current position is greater than its position+1
+    program saves its position's number to a temp variable, saves current position+1's number to the current position's number,
+    then saves the temp variable to current position+1 
+since 0 (25) is less than 1 (30), program checks the next number
+since 1 (30) is greater than 2 (20), program saves position 1 (30) to a temp variable, saves position 2 (20) to position 1,
+    and saves the temp variable (30) to position 2
+since 2 (30) is less than 3 (80), program checks the next number
+since 3 (80) is greater than 4 (40), program saves position 3 (80) to a temp variable, saves position 4 (40) to position 3,
+    and saves the temp variable (80) to position 4
+since 4 (80) is greater than 5 (60), program saves position 4 (80) to a temp variable, saves position 5 (60) to position 4,
+    and saves the temp variable (80) to position 5
+since 5 (80) is the end of the array, program ends current loop, but still needs to check for swapping
+program loops through the entire array, {25, 20, 30, 40, 60, 80}, again
+since 0 (25) is greater than 1 (20) program saves position 0 (25) to a temp variable, saves position 2 (20) to position 1,
+    and saves the temp variable (25) to position 2
+since 1 (25) is less than 2 (30), program checks the next number
+since 2 (30) is less than 3 (40), program checks the next number
+since 3 (40) is less than 4 (60), program checks the next number
+since 4 (65) is less than 5 (80), program checks the next number
+since 5 (80) is the end of the array, program ends current loop, but still needs to check for swapping
+program loops through the entire array, {20, 25, 30, 40, 60, 80}, again
+since 0 (20) is less than 1 (25), program checks the next number
+since 1 (25) is less than 2 (30), program checks the next number
+since 2 (30) is less than 3 (40), program checks the next number
+since 3 (40) is less than 4 (60), program checks the next number
+since 4 (65) is less than 5 (80), program checks the next number
+since 5 (80) is the end of the array, program ends current looping; because no swaps were performed, program ends all looping
