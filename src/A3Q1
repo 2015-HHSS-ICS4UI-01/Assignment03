@@ -1,5 +1,7 @@
 A3Q1: 
 [23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96]
+
+Sequential Search:
 To begin, the for loop begins at the beginning of the array .
 It goes through every number in the array until it find the place in the array
 
@@ -30,4 +32,27 @@ c)  Find 50
     Is 34 equal to 50? No. Move to the next spot in the array.
     Is 41 equal to 50? No. Move to the next spot in the array.
     Is 51 equal to 50? Since 51 is greater than 51, return -1, meaning that the inputted number is not in the array.
+ 
+
+Binary Search:
+
+Binary search will first split the array in the middle and see if the number in the middle in the inputted number.
+Now, the array is split in two. If the inputted number is bigger than the middle number, it will go to the right of the array.
+If the inputted number is less than the middle number, it will go to the left of the array.
+This process will continue until the number is found.
+
+[23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96]
+
+a)  Find 72.
+    How long is the array? 13. 
+    Divide 13 by 2.
+    What is the number in spot 7? 55.
+    Is 55 equal to 72? No. 
+    Is 72 greater then 55? Yes. Go to the right of the array.
+    [57, 60, 67, 72, 78, 83, 96]
+    How long is the array? 7. 
+    Divide 7 by 2.
+    What is the number in spot 3? 72. 
+    Is 55 equal to 72? Yes. Return the spot in the array that the number is in.
     
+
