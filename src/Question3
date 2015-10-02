@@ -1,4 +1,4 @@
-The maximum number of searches needed can be calculated with 
+The maximum number of searches needed for binary search is
 In the worst case scenario, the number that is being searched for is at the start of the array.
 Because binary search starts from the middle, it will take significantly longer to reach the number.
 
