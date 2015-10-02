@@ -1,0 +1,38 @@
+The maximum number of searches needed can be calculated with 
+In the worst case scenario, the number that is being searched for is at the start of the array.
+Because binary search starts from the middle, it will take significantly longer to reach the number.
+
+
+
+14,24,35,38,40,56,60
+
+0 + 6 / 2 = 3
+
+38 > 14
+
+0 + 2 / 2 = 1
+
+24 > 14
+
+0 + 1 / 2 = 0
+
+14 > 34
+
+0 + 0 = 0
+
+
+if(start > end){ 3
+      return -1;
+   }
+   // calculate the middle number in the array
+   int mid = (end-start)/2; 3
+   // if we found it, return where it is
+   if(a[mid] == find){
+      return mid;
+   // if the number is smaller, look in the left half
+   }else if(find < a[mid]){
+      return binarySearch(find, a, start, mid-1);
+   // if the number is bigger, look to the right
+   }else{
+      return binarySearch(find, a, mid+1, end);
+   }

@@ -13,24 +13,28 @@ public class Question6 {
         //initializes array for tracking the number of times a number appears
         int[] tracker = new int[101];
         //loop through array tracker until all numbers are assigned a 0
-        for(int i = 0; i <= n.length; i++){
+        for(int i = 0; i < n.length; i++){
             
             tracker[i] = 0;
         }
         
         //loop through every number of the array
-        for(int i = 0; i <= n.length; i++)
+        for(int i = 0; i < n.length; i++)
         {
             if(n[i] == tracker[n[i]])
             tracker[n[i]] = tracker[n[i]] + 1;
         }
         
-        for(int i = 0; i <= tracker.length; i++)
+        for(int i = 0; i < tracker.length; i++)
         {
-            for(int j = 0; j < tracker[i]; j++)
-            {
-                System.out.println(String.valueOf(tracker[i]));
-            }
+           if(tracker[i] >= 1)
+           {
+               for(int j = 0; j <= tracker[i]; j++)
+               {
+                   n[j] = tracker[i];
+                   j++;
+               }
+           }
         }
     }
 
@@ -41,7 +45,11 @@ public class Question6 {
         
         int[] n = {35, 74, 19};
         Question6 test = new Question6();
+        test.bucketSort(n);
         
-        //test.bucketSort(n);
+        for(int i = 0; i < n.length; i++)
+        {
+            System.out.println(n[i]);
+        }
     }
 }
