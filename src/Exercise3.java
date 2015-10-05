@@ -16,7 +16,7 @@ public class Exercise3 {
         Exercise3 test = new Exercise3();
         int[] intArray = {2, 3, 1, 4, 6, 8, 9};
         test.bucketSort(intArray);
-        String[] stringArray = {"aaaa", "bbbbb", "ddddd", "ccccc"};
+        String[] stringArray = {"aaaa", "abcd", "abbc", "aaab"};
         test.alphabeticalSort(stringArray);
         for (int x = 0; x < stringArray.length; x++) {
             //System.out.print(intArray[x] + ",");
@@ -24,9 +24,12 @@ public class Exercise3 {
         }
     }
 
+    //sorts an array of strings in alphabetical order
     public void alphabeticalSort(String[] s) {
-        for (int i = 1; i < s.length; i++) {
-            for (int j = i; j > 0 && s[j].charAt(0) < s[j - 1].charAt(0); j--) {
+        for (int i = 1; i < s.length; i++) { //iterates through the string starting with the second number
+            //if the second number comes before the first number alphabetically: 
+            for (int j = i; j > 0 && s[j].compareToIgnoreCase(s[j-1]) < 0; j--) { 
+                //switch the two words
                 String temp = s[j];
                 s[j] = s[j - 1];
                 s[j - 1] = temp;
