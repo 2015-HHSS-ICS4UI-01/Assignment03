@@ -55,4 +55,41 @@ a)  Find 72.
     What is the number in spot 3? 72. 
     Is 55 equal to 72? Yes. Return the spot in the array that the number is in.
     
+b)  Find 41.
+    How long is the array? 13. 
+    Divide 13 by 2.
+    What is the number in spot 7? 55.
+    Is 55 equal to 41? No.
+    Is 41 greater then 55? No. Go to the left of the array.
+    [23, 27, 30, 34, 41, 51]
+    How long is the array? 5. 
+    Divide 5 by 2.
+    What is the number in spot 2? 30. 
+    Is 41 equal to 30? No. 
+    Is 41 greater then 30? Yes. Go to the right of the array.
+    [34,41,51]
+    How long is the array? 3. 
+    Divide 3 by 2.
+    What is the number in spot 1? 41. 
+    Is 41 equal to 41? Yes. Return the spot in the array that the number is in.
 
+c)  Find 50. 
+    How long is the array? 13. 
+    Divide 13 by 2.
+    What is the number in spot 7? 55.
+    Is 55 equal to 50? No.
+    Is 50 greater then 55? No. Go to the left of the array.
+    [23, 27, 30, 34, 41, 51]
+    How long is the array? 5. 
+    Divide 5 by 2.
+    What is the number in spot 2? 30. 
+    Is 50 equal to 30? No. 
+    Is 50 greater then 30? Yes. Go to the right of the array.
+    [34,41,51]
+    How long is the array? 3. 
+    Divide 3 by 2.
+    What is the number in spot 1? 41. 
+    Is 50 equal to 41? No. Go to the right of the array.
+    [51]
+    Is 50 equal to 51? No. Since there are no more unchecked spots in the array. Return -1.
+    

@@ -1,0 +1,25 @@
+A3Q2: Bubble Sort
+[25, 30, 20, 80, 40, 60]
+Bubble Sort will begin at the beginning of the array. It will compare the number in the position to the 
+number in the position next to it. If the number is bigger than the number beside it, it will switch the number.
+
+Start at the beginning of the array. 
+Is 25 greater than 30? No. Go to the next spot in the array.
+Is 30 greater than 20? Yes. Switch the position of the two numbers.
+Is 30 greater than 80? No. Go to the next spot in the array.
+Is 80 greater than 40? Yes. Switch the position of the two numbers.
+Is 80 greater than 60? Yes. Switch the position of the two numbers.
+The loop restarts.
+[25, 20, 30, 40, 60, 80]
+Is 25 greater than 30? Yes. Switch the position of the two numbers.
+Is 25 greater than 30? No. Go to the next spot in the array.
+Is 30 greater than 40? No. Go to the next spot in the array.
+Is 40 greater than 60? No. Go to the next spot in the array.
+Is 60 greater than 80? No. Go to the next spot in the array.
+The loop restarts.
+Is 20 greater than 25? No. Go to the next spot in the array.
+Is 25 greater than 30? No. Go to the next spot in the array.
+Is 30 greater than 40? No. Go to the next spot in the array.
+Is 40 greater than 60? No. Go to the next spot in the array.
+Is 60 greater than 80? No. Go to the next spot in the array.
+Since they are sorted, the loop ends and the array is sorted.
