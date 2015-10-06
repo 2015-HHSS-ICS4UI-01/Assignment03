@@ -15,19 +15,21 @@ public class Question5 {
         //loop through the array until all numbers are sorted
         for(int i = 1; i < n.length; i++)
         {
+            
             //set variable j equal to i
             int j = i;
+            
             //while int at position j is greater than 0
             //and while int at position j-1 is greater than int at position j
             while(j > 0 && n[j-1] < n[j])
             {
-              //assign int at position j to a temporary variable
+              //assign number at position j to a temporary variable
               int temp = n[j];
-              //set int at position j to int at position j-1
+              //set number at position j to number at position j-1
               n[j] = n[j-1];
-              //set int at position j-1 to the original value of int at position j
+              //set number at position j-1 to the original value of int at position j
               n[j-1] = temp;
-              //subtract 1 from j each loop around
+              //j decreases by one each loop
               j--;
             }
         }
