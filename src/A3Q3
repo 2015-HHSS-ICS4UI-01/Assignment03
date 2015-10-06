@@ -1,0 +1,11 @@
+The maximum amount of comparisons in an array containing seven items is 
+three comparisons. This only occurs when the number you want to find it at the beginning or the end of the array.
+For example: [0, 1, 2, 3, 4, 5, 6]
+    Find 0.
+    It will first compare 0 and 3.
+    Since they are not equal it will divide the array by two and go to the left of the array.
+    It will compare 0 and 1. 
+    Since they are not equal it will divide the array by two and go to the left of the array.
+    It will compare 0 and 0.
+    Since they are equal, it will end the search.
+So as a result, there are a total of three comparisons of an array containing 7 items.
