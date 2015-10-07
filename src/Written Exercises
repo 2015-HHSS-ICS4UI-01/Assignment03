@@ -1,0 +1,85 @@
+A3Q1
+a)  Sequential Search for 72:           
+   0     23, != 72                          
+   1     27, != 72
+   2     30, != 72
+   3     34, != 72
+   4     41, != 72
+   5     51, != 72
+   6     55, != 72
+   7     57, != 72
+   8     60, != 72
+   9     67, != 72
+   10    72, == 72 ---> return 10;
+   all indexed after 10 are not checked.
+
+    Binary Search for 72:
+    number at middle of array is less than 72, return index of middle (7) + Binary Search for 72 in second half of array
+        number at middle of array is equal to 72, return index of middle (3)
+    total return: 7 + 3 ---> 10;
+
+b)  Sequential Search for 41:
+   0     23, != 41                          
+   1     27, != 41
+   2     30, != 41
+   3     34, != 41
+   4     41, == 41 ---> return 4;
+   all indexes after 4 are not checked. 
+
+    Binary Search for 41: 
+    number at middle of array is greater than 41, return Binary Search for 41 in first half of array.
+        number at middle of array is less than 41, return index of middle (3) + Binary Search for 41 in the second half of the array.
+            number at middle of array is 41, return index of middle (1);
+    total return: 3 + 1 ---> return 4;
+
+c)  Sequential Search for 50:
+   0     23, != 50                          
+   1     27, != 50
+   2     30, != 50
+   3     34, != 50
+   4     41, != 50
+   5     51, != 50
+   6     55, != 50
+   7     57, != 50
+   8     60, != 50
+   9     67, != 50
+   10    72, != 50
+   11    78, != 50
+   12    83, != 50
+   13    96, != 50
+        return -1;
+
+    Binary Search for 50:
+    number at middle of array is greater than 50, return Binary Search for 50 in the first half of the array
+        number at the middle of array is less than 50, return index of middle (4) + Binary Search for 50 in the second half of the array
+            number at middle of array is greater than 50, return Binary Search for 50 in the first half of the array
+                length of array is 1, number is not equal to 50, return -1.
+
+A3Q2:
+Bubble Sort the following array: 
+    First Loop: 25 30 20 80 40 60
+        25 is not greater than the number following it (30) --> no switch required
+        30 is greater than the number following it (20) --> switch, the array will be sorted once more after this 
+        new order: 25 20 30 80 40 60
+        30 is not greater than 80, no switch
+        80 is greater than 40, switch, the array will be sorted again
+        new order: 25 20 30 40 80 60
+        80 is greater than 60, switch, the array will be sorted again
+        new order: 25 20 30 40 60 80
+    Second Loop: 25 20 30 40 60 80
+        25 is greater than 20 --> switch, the array will be sorted again
+        new order: 20 25 30 40 60 80
+        25 is not greater than 30, no switch
+        30 is not greater than 40, no switch
+        40 is not greater than 60, no switch
+        60 is not greater than 80, no switch
+    Third Loop: 20 25 30 40 60 80
+        20 is not greater than 25, no switch
+        25 is not greater than 30, no switch
+        30 is not greater than 40, no switch
+        40 is not greater than 60, no switch
+        60 is not greater than 80, no switch
+    No switch in the third loop, no more sorting/looping needed
+
+A3Q3: 
+    The maximum number of comparisons that can be made is 3.  
