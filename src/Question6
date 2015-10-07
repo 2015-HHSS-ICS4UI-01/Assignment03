@@ -1,0 +1,4 @@
+Bucket sort is not as useful as a general sorting algorithm because it is inefficient. The tracker array
+must be checked in its entirety twice: once to set all numbers to 0, and again to go through the array
+to sort the set of numbers given. With bigger sets, bucket sort's efficiency is O(n^2), equal to that
+of bubble sort, a sorting method also not the most efficient.

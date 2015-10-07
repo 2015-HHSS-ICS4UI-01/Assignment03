@@ -9,7 +9,7 @@
  */
 public class Question5 {
     
-   public void insertionSort(int[] n){
+    public void insertionSort(int[] n){
       
        
         //loop through the array until all numbers are sorted
@@ -45,10 +45,11 @@ public class Question5 {
         int[] n = {25,30,20,80,40,60};
         
         Question5 test = new Question5();
-        //runs insertionSort to sort the array
+        
+        //sorts the numbers in the array
         test.insertionSort(n);
         
-        //prints the results of the sort
+        //prints the sorted numbers to the screen
         for(int i = 0; i < n.length; i++)
         {
             System.out.println(n[i]);

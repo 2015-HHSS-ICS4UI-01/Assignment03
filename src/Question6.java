@@ -9,6 +9,13 @@
  */
 public class Question6 {
     
+    public void initializeArray(int[] n){
+        
+        for(int i = 0; i < n.length; i++){
+            n[i] = (int)(Math.random()*101);
+        }
+    }
+    
     public void bucketSort(int[] n){
         //initializes array for tracking the number of times a number appears
         int[] tracker = new int[101];
@@ -31,7 +38,7 @@ public class Question6 {
         for(int i = 0; i < tracker.length; i++)
         {
             //until variable j is equal to or greater to tracker at variable i
-            //
+            //set the number at that position of the set of numbers to the value of variable i
             for(int j = 0; j < tracker[i]; j++)
             {
                 n[numPos] = i;
@@ -45,16 +52,16 @@ public class Question6 {
      */
     public static void main(String[] args) {
         
-        int[] n = {34,72,19}; //new int[100];
-        
-//        for(int i = 0; i < n.length; i++)
-//        {
-//            n[i] = (int)Math.random()*100;
-//        }
+        int[] n = new int[101];
         
         Question6 test = new Question6();
+        
+        //assign numbers to the array
+        test.initializeArray(n);
+        //sort the set of numbers
         test.bucketSort(n);
         
+        //print out the sorted array
         for(int i = 0; i < n.length; i++)
         {
             System.out.println(n[i]);

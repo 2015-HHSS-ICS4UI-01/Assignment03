@@ -39,7 +39,7 @@ public class Question7 {
      */
     public static void main(String[] args) {
         //creates a string with words to be sorted
-        String[] words = {"pizza", "cupcake", "pie", "apples"};
+        String[] words = {"pinecone", "pie", "pizza", "pineapple"};
         
         Question7 test = new Question7();
         

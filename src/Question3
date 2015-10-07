@@ -1,38 +1,26 @@
-The maximum number of searches needed for binary search is
-In the worst case scenario, the number that is being searched for is at the start of the array.
-Because binary search starts from the middle, it will take significantly longer to reach the number.
+The maximum number of comparisons needed for binary search on a list of 7 items, is 3.
+In the worst case scenario, the number that is being searched for is at the start/end of the array, or not in the array at all.
+Because binary search starts from the middle, it will take significantly longer to reach the number, than
+if it had been closer to the middle number.
 
+Example:
 
+Take this set of numbers, and search for 12, a number not in the array:
 
-14,24,35,38,40,56,60
+[0] [1] [2] [3] [4] [5] [6]
+14, 24, 35, 38, 40, 56, 60
 
+program finds the sum of end point (0) and start point (6), and divides by 2 for a mid point of 3
 0 + 6 / 2 = 3
-
-38 > 14
-
+program checks number at position 3 (38) to see if it is equal to 12 (Comparison #1)
+38 > 12
+since 3 (38) is greater than 12, program changes the ending point to one less than the compared number, 2
 0 + 2 / 2 = 1
-
-24 > 14
-
-0 + 1 / 2 = 0
-
-14 > 34
+program checks number at position 1 (24) to see if it is equal to 12 (Comparison #2)
+24 > 12
+since 1 (24) is greater than 12, program changes the ending point to one less than the compared number, 0
+0 + 0 / 2 = 0
+program checks number at position 0 (14), to see if it is equal to 12 (Comparison #3)
+14 > 12
 
 0 + 0 = 0
-
-
-if(start > end){ 3
-      return -1;
-   }
-   // calculate the middle number in the array
-   int mid = (end-start)/2; 3
-   // if we found it, return where it is
-   if(a[mid] == find){
-      return mid;
-   // if the number is smaller, look in the left half
-   }else if(find < a[mid]){
-      return binarySearch(find, a, start, mid-1);
-   // if the number is bigger, look to the right
-   }else{
-      return binarySearch(find, a, mid+1, end);
-   }
