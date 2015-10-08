@@ -16,6 +16,7 @@ If the number at the program's current position is greater than its position+1:
     Since 5 (80) is the end of the array, program ends current loop, but still needs to check for swapping.
 If the boolean has been set to true, loop through the array again.
     Since the boolean is true, indicating a number swap was made, program loops through the entire array, {25, 20, 30, 40, 60, 80}, again.
+
 If the number at the program's current position is greater than its position+1:
     Program saves its position's number to a temp variable, saves current position+1's number to the current position's number,
     then saves the temp variable to current position+1.
@@ -28,6 +29,7 @@ If the number at the program's current position is greater than its position+1:
     Since 5 (80) is the end of the array, program ends current loop, but still needs to check for swapping
 If the boolean has been set to true, loop through the array again.
     Since the boolean is true, indicating a number swap was made, program loops through the entire array, {20, 25, 30, 40, 60, 80}, again.
+
 If the number at the program's current position is greater than its position+1:
     Program saves its position's number to a temp variable, saves current position+1's number to the current position's number,
     then saves the temp variable to current position+1 .

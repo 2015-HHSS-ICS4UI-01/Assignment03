@@ -11,7 +11,6 @@ public class Question5 {
     
     public void insertionSort(int[] n){
       
-       
         //loop through the array until all numbers are sorted
         for(int i = 1; i < n.length; i++)
         {
@@ -19,8 +18,9 @@ public class Question5 {
             //set variable j equal to i
             int j = i;
             
-            //while int at position j is greater than 0
-            //and while int at position j-1 is greater than int at position j
+            //if number at j-1 is greater than number at j
+            //counts down from j and swaps j with the number before it
+            //until number at j is in the correct position
             while(j > 0 && n[j-1] < n[j])
             {
               //assign number at position j to a temporary variable
@@ -29,7 +29,7 @@ public class Question5 {
               n[j] = n[j-1];
               //set number at position j-1 to the original value of int at position j
               n[j-1] = temp;
-              //j decreases by one each loop
+
               j--;
             }
         }
@@ -41,7 +41,7 @@ public class Question5 {
      */
     public static void main(String[] args) {
         
-        //creates an array for testing insertionSort
+        //creates an array for testing the sorting algorithm
         int[] n = {25,30,20,80,40,60};
         
         Question5 test = new Question5();

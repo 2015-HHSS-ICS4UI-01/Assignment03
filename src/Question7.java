@@ -17,10 +17,10 @@ public class Question7 {
             int j = i;
             
             
-            //while the first word is alphabetically after the second word
+            //if the first word is alphabetically after the second word
             //and while number at j is greater than 0
             //swap the first word and the second word's positions
-            //and count down from the number at j
+            //and count down from j
             while(j > 0 && words[j-1].compareTo(words[j]) > 0){
                 
                 String temp = words[j]; 
