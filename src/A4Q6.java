@@ -16,11 +16,15 @@ public class A4Q6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int[] hundy = new int [101];
-        for (int i = 0; i < 101; i++){
+        int[] hundy = new int [50];
+        for (int i = 0; i < hundy.length; i++){
             hundy[i] = (int)(Math.random()*101);
         }
         bucketSort(hundy);
+        
+        for(int i = 0; i < hundy.length; i++){
+            System.out.println(hundy[i]);
+        }
     }
 
     static void bucketSort(int[] a) {
@@ -30,26 +34,28 @@ public class A4Q6 {
         
         //the number thats being checked
         int num = 0;
-        //how many times ive seen the number
-        int count = 0;
+        
+        //temp array
+        int[] temp = new int[a.length];
+        int tempCount = 0;
         
         //checking every number up to and including 100
         while (num <= 100) {
             //seeing if the number at [i] is the current number we are looking for
             for (int i = 0; i < a.length; i++) {
                 if (a[i] == num){
-                    count++;
+                    temp[tempCount] = num;
+                    tempCount++;
                 }
             }
-            
-            //telling the user the number that was looked for and how many times it was found
-            System.out.println("for " + num + ", there was " + count + " of them.");
-            
             //moving to the next number
             num++;
-            
-            //reset the count
-            count = 0;
         }
+        
+        for(int i = 0; i < temp.length; i++){
+            a[i] = temp[i];
+        }
+        
+
     }
 }
