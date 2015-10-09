@@ -1,0 +1,8 @@
+For large arrays, in the worst case, is selection sort faster than insertion sort? Explain.
+
+In the worst case, selection sort and insertion sort will take the same amount of comparisons.
+This is because, in the case where the array is sorted backwards, 
+both algorithms will use the maximum number of comparisons, which is O(n^2).
+Although in most cases other than the worst, insertion sort is faster, 
+because it only does the number of comparisons that are needed,
+while selection sort compares every single pair of numbers.
