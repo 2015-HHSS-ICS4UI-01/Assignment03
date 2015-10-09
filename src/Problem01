@@ -1,0 +1,187 @@
+//SEQUENTIAL SEARCH
+
+looks for number 72 at spot one
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+XX
+
+spot one is not 72, looks for number 72 at spot two
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    XX
+
+spot two is not 72, looks for number 72 at spot three
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+        XX
+
+spot three is not 72, looks for number 72 at spot four
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+            XX
+
+spot four is not 72, looks for number 72 at spot five
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                XX
+
+spot five is not 72, looks for number 72 at spot six
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                    XX
+
+spot six is not 72, looks for number 72 at spot seven
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                        XX
+
+spot seven is not 72, looks for number 72 at spot eight
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                            XX
+
+spot eight is not 72, looks for number 72 at spot nine
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                XX
+
+spot nine is not 72, looks for number 72 at spot ten
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                    XX
+
+spot ten is not 72, looks for number 72 at spot eleven
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                        XX
+
+spot eleven is 72, stop search
+
+
+
+//SEQUENTIAL SEARCH
+
+
+
+looks for number 41 at spot one
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+XX
+
+spot one is not 41, looks for number 41 at spot two
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    XX
+
+spot two is not 41, looks for number 41 at spot three
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+        XX
+
+spot three is not 41, looks for number 41 at spot four
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+            XX
+
+spot four is not 41, looks for number 41 at spot five
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                XX
+
+spot five is 41, stop search
+
+
+
+//SEQUENTIAL SEARCH
+
+
+
+looks for number 50 at spot one
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+XX
+
+spot one is not 50, looks for number 50 at spot two
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    XX
+
+spot two is not 50, looks for number 50 at spot three
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+        XX
+
+spot three is not 50, looks for number 50 at spot four
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+            XX
+
+spot four is not 50, looks for number 50 at spot five
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                XX
+
+spot five is not 50, looks for number 50 at spot six
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                    XX
+
+spot six is not 50, looks for number 50 at spot seven
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                        XX
+
+spot seven is not 50, looks for number 50 at spot eight
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                            XX
+
+spot eight is not 50, looks for number 50 at spot nine
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                XX
+
+spot nine is not 50, looks for number 50 at spot ten
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                    XX
+
+spot ten is not 50, looks for number 50 at spot eleven
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                        XX
+
+spot eleven is not 50, looks for number 50 at spot twelve
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                            XX
+
+spot twelve is not 50, looks for number 50 at spot thirteen
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                                XX
+ 
+spot thirteen is not 50, looks for number 50 at spot fourteen
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                                    XX
+
+array does not contain 50
+
+
+
+//BINARY SEARCH
+
+
+
+looks for number 72 at the spot seven
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                        XX
+
+spot seven is less than 72, searches from spot eight to fourteen
+
+57, 60, 67, 72, 78, 83, 96
+            XX
+
+spot eleven is 72 
