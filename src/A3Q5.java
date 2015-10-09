@@ -14,15 +14,16 @@ public class A3Q5 {
      */
     public static void main(String[] args) {
         A3Q5 test = new A3Q5();
-        int[] n = {1, 2, 23, 2, 23, 23, 2, 12, 31, 23};
+        int[] n = {10,9,8,7,6,5,4,3,2,1,1,1,1,1,1,1,11};
+        String[] words = {"abcdefg","abcdeff"};
 //        test.insertionSort(n);
-        test.bucketSort(n);
-        for (int x = 0; x < n.length; x++) {
-            System.out.println(n[x]);
+        test.stringSort(words);
+        for (int x = 0; x < words.length; x++) {
+            System.out.println(words[x]);
         }
     }
 
-    public void insertionSort(int[] n) {
+    public void insertionSortDescendign(int[] n) {
         for (int x = 1; x < n.length; x++) {
             int j = x;
             while (j > 0 && n[j] > n[j - 1]) {
@@ -46,6 +47,16 @@ public class A3Q5 {
                     n[i] = x;
                     i++;
                 }
+            }
+        }
+    }
+
+    public void stringSort(String[] words) {
+        for (int x = 1; x < words.length; x++) {
+            for (int i = x; i > 0 && words[i].compareToIgnoreCase(words[i - 1]) < 0; i--) {
+                String temp = words[i];
+                words[i] = words[i - 1];
+                words[i - 1] = temp;
             }
         }
     }
