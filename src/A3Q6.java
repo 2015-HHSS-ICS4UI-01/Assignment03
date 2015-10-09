@@ -16,18 +16,19 @@ public class A3Q6 {
         //loop that uses each position of the array
         for(int i = 0; i < n.length; i++)
         {
-            int value = n[i]; //create an integer to store the value in that postition`
+            int value = n[i]; //create an integer to store the value in that postition
             track[value]++; //increase the number at the values position by 1 in the tracker array
         }
-        //loop to get the sorted values back into the initial array
+        //create a variable to set the position of each entry in the original array
+        int count = 0;
+        //loop to use each position in the tracker array (values 1-100)
         for(int i = 0; i < track.length; i++)
         {
-             int count = 0;
-             
+            //loop to run all spots in the tracker array that contain stored values
              for(int j = 0; track[i] > j; j++)
              {
-                 n[count] = i;
-                 count++;
+                 n[count] = i; //fill the original array with the value that the tracker has stored
+                 count++; //increase the position each time to place them in order
              }
         }
         
