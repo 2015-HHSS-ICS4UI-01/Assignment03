@@ -1,0 +1,103 @@
+Suppose an array called scores contains the elements 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+In an organized manner, trace the execution of Sequential Search and Binary Search Algorithms to search for the following elements:
+
+a)72
+Sequential Search
+Check to see if the first element "23" is 72.
+Since it is not 72, move onto the next number.
+Check to see if the element "27" is 72.
+Since it is not 72, move onto the next number.
+Check to see if the element "30" is 72.
+Since it is not 72, move onto the next number.
+Check to see if the element "34" is 72.
+Since it is not 72, move onto the next number.
+Check to see if the element "41" is 72.
+Since it is not 72, move onto the next number.
+Check to see if the element "51" is 72.
+Since it is not 72, move onto the next number.
+Check to see if the element "55" is 72.
+Since it is not 72, move onto the next number.
+Check to see if the element "57" is 72.
+Since it is not 72, move onto the next number.
+Check to see if the element "60" is 72.
+Since it is not 72, move onto the next number.
+Check to see if the element "67" is 72.
+Since it is not 72, move onto the next number.
+Check to see if the element "72" is 72.
+Since it is 72, the Sequential Search is complete.
+
+Binary Search
+Go to the middle element, which is "57" and check if it's 72.
+Since "57" is smaller than 72, separate and move to the right elements.
+Go to the middle element, which is "78" and check if it's 72.
+Since "78" is bigger than 72, separate and move to the left elements.
+Go to the middle element, which is "67" and check if it's 72.
+Since "67" is smaller than 72, separate and move to the right elements.
+Go to the middle element, which is "72" and check if it's 72.
+Since it is 72, the Binary Search is complete.
+
+b)41
+Sequential Search
+Check to see if the first element "23" is 41.
+Since it is not 41, move onto the next number.
+Check to see if the element "27" is 41.
+Since it is not 41, move onto the next number.
+Check to see if the element "30" is 41.
+Since it is not 41, move onto the next number.
+Check to see if the element "34" is 41.
+Since it is not 41, move onto the next number.
+Check to see if the element "41" is 41.
+Since it is 41, the Sequential Search is complete.
+
+Binary Search
+Go to the middle element, which is "57" and check if it's 41.
+Since "57" is bigger than 41, separate and move to the left elements.
+Go to he middle element, which is "34" and check if it's 41.
+Since "34" is smaller than 41, separate and move to the right elements.
+Go to the middle element, which is "51" and check if it's 41.
+Since "51" is bigger than 41, separate and move to the left elements.
+Go to the middle element, which is "41" and check if it's 41.
+Since it is 41, the Binary Search is complete.
+
+c)50
+Sequential Search
+Check to see if the first element "23" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "27" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "30" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "34" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "41" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "51" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "55" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "57" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "60" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "67" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "72" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "78" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "83" is 50.
+Since it is not 50, move onto the next number.
+Check to see if the element "96" is 50.
+Since it is not 50, move onto the next number.
+Since there are no more numbers to check, the element 50 is not in the array.
+
+Binary Search
+Go to the middle element, which is "57" and check if it's 50.
+Since "57" is bigger than 50, separate and move to the left elements.
+Go to the middle element, which is "34" and check if it's 50.
+Since "34" is smaller than 50, separate and move to the right elements.
+Go to the middle element, which is "51" and check if it's 50.
+Since "51" is bigger than 50, separate and move to the left elements.
+Go to the middle element, which is "41" and check if it's 50.
+Since "41" is smaller than 50, separate and move to the right elements.
+Since there are no more numbers to check, the element 50 is not in the array.
