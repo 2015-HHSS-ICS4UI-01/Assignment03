@@ -1,0 +1,4 @@
+In the worst case, with larger arrays, insertion sort is slower than selection sort.
+If the numbers are in reversed order (largest to smallest), an insertion sort must cycle through each number of the array to reach position 0.
+The further into the array the program goes, the more numbers that it is forced to swap until it reaches 0, which takes 5 turns per loop around.  
+Selection sort, though inefficient with smaller numbers, only needs to check through the set of numbers once per loop to find the lowest number, and move it into its proper position.

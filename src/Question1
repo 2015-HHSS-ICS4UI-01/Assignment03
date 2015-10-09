@@ -1,0 +1,130 @@
+1) 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+a) 72
+
+Sequential Search:
+
+Program takes in two variables: a sorted array of numbers and the number to find in the array (72).
+Searches through the array of numbers starting at position 0, until 72 is found or until all numbers have been seen.
+If 72 is found, return position of 72 in the array to the user.
+If not found, return -1 to the user.
+    Since 0 (23) is less than 72, program checks the next number.
+    Since 1 (27) is less than 72, program checks the next number.
+    Since 2 (30) is less than 72, program checks the next number.
+    Since 3 (34) is less than 72, program checks the next number.
+    Since 4 (41) is less than 72, program checks the next number.
+    Since 5 (51) is less than 72, program checks the next number.
+    Since 6 (55) is less than 72, program checks the next number.
+    Since 7 (57) is less than 72, program checks the next number.
+    Since 8 (60) is less than 72, program checks the next number.
+    Since 9 (67) is less than 72, program checks the next number.
+    Since 10 (72) is equal to the number the program was searching for, program returns its position, 10, to the user.
+
+Binary Search:
+
+Program takes in 4 variables: a sorted array of numbers, the number to find (72), the starting position of the array (0) and the ending position (13).
+If starting point is greater than the ending point, return -1 to the user.
+    Since starting point is less than the ending point, program tries to find the middle of the array instead.
+Find the middle of the array by adding the starting point to the ending point, then dividing by 2.
+Program adds 0 and 13, and divides that by 2 for a middle point of 6.
+The program checks the number at position 6.
+If the number at position 6 of the array is equal to the number to be found, return the position number to the user.
+    Since number at 6 is 55, program instead checks if 55 is greater than or less than 72.
+    Since 6 (55) is less than 72, program returns the same number to find, array, and ending point, but sets its start to 7 (the middle of the array (6) plus 1).
+If starting point is greater than the ending point, return -1 to the user.
+    Since starting point is less than the ending point, program tries to find the middle of the array instead.
+Program adds 7 and 13, and divides by 2 for a middle of 10.
+The program checks the number at position 10.
+If the number at position 10 is equal to the number to be found, return the position number.
+    Since 10 (72) is equal to the number the program was searching for, program returns the position number, to the user.
+
+b) 41
+
+Sequential Search:
+
+Program takes in two variables: a sorted array of numbers and the number to find in the array (41).
+Searches through the array of numbers starting at position 0, until 41 is found or until all numbers have been seen.
+If 41 is found, return position of 41 in the array to the user.
+If not found, return -1 to the user.
+    Since 0 (23) is less than 41, program checks the next number.
+    Since 1 (27) is less than 41, program checks the next number.
+    Since 2 (30) is less than 41, program checks the next number.
+    Since 3 (34) is less than 41, program checks the next number.
+    Since 4 (41) is equal to the number the program was searching for, program returns the position number (4) to the user.
+
+Binary Search
+
+Program takes in 4 variables: a sorted array of numbers, the number to find (41), the starting position of the array (0) and the ending position (13).
+If starting point is greater than the ending point, return -1 to the user.
+    Since starting point is less than the ending point, program tries to find the middle of the array instead.
+Program finds the middle of the array by adding the starting point to the ending point, then dividing by 2.
+Program adds 0 and 13, and divides that by 2 for a middle of 6.
+The program checks the number at position 6.
+If the number at position 6 of the array is equal to the number to be found, return the position number (6) to the user.
+    Since 6 (55) is greater than 41, program returns the same number to find (41), array, and starting point (0), but sets its end to 5 (the middle of the array (6) minus 1). 
+If starting point is greater than the ending point, return -1 to the user.
+    Since starting point is less than the ending point, program tries to find the middle of the array instead.
+Program adds 0 and 5, and divides by 2 for a middle of 2.
+The program checks the number at position 2.
+If the number at position 2 is equal to the number to be found, return the position number (2).
+    Since 2 (30) is less than 41, program returns the same number to find, array, and ending point (5), but sets its start to 3 (the middle of the array (2) plus 1).
+If starting point is greater than the ending point, return -1 to the user.
+    Since starting point is less than the ending point, program tries to find the middle of the array instead.
+Program adds 3 and 5, and divides by 2 for a middle of 4.
+Program checks the number at position 4.
+If the number at position 4 is equal to the number to be found, return the position number (4).
+    Since (4) 41 is equal to the number the program was searching for, program returns the position number (4) to the user.
+
+c) 50
+
+Sequential Search:
+
+Program takes in two variables: a sorted array of numbers and the number to find in the array (50).
+Searches through the array of numbers starting at position 0, until 50 is found or until all numbers have been seen.
+If 50 is found, return position of 50 in the array to the user.
+If not found, return -1 to the user.
+    Since 0 (23) is less than 72, program checks the next number.
+    Since 1 (27) is less than 72, program checks the next number.
+    Since 2 (30) is less than 72, program checks the next number.
+    Since 3 (34) is less than 72, program checks the next number.
+    Since 4 (41) is less than 72, program checks the next number.
+    Since 5 (51) is less than 72, program checks the next number.
+    Since 6 (55) is less than 72, program checks the next number.
+    Since 7 (57) is less than 72, program checks the next number.
+    Since 8 (60) is less than 72, program checks the next number.
+    Since 9 (67) is less than 72, program checks the next number.
+    Since 10 (72) is less than 72, program checks the next number.
+    Since 11 (78) is less than 72, program checks the next number.
+    Since 12 (83) is less than 72, program checks the next number.
+    Since 13 (96) is less than 72, and since it is the last number in the array, program stops checking.
+    Since the program checked all numbers, and since 50 was not found, program returns -1 to the user.
+
+Binary Search
+
+Program takes in 4 variables: a sorted array of numbers, the number to find (50), the starting position of the array (0) and the ending position (13).
+If starting point is greater than the ending point, return -1 to the user.
+    Since starting point is less than the ending point, program tries to find the middle of the array instead.
+Program finds the middle of the array by adding the starting point to the ending point, then dividing by 2.
+Program adds 0 and 13, and divides that by 2 for a middle of 6.
+The program checks the number at position 6.
+If the number at position 6 of the array is equal to the number to be found, return the position number (6) to the user.
+    Since 6 (55) is greater than 50, program returns the same number to find (50), array, and starting point (0), but sets its end to 5 (the middle of the array (6) minus 1).
+If starting point is greater than the ending point, return -1 to the user.
+    Since starting point is less than the ending point, program tries to find the middle of the array instead.
+Program adds 0 and 5, and divides by 2 for a middle point of 2.
+The program checks the number at position 2.
+If the number at position 2 is equal to the number to be found, return the position number (2).
+    Since 2 (30) is less than 50, program returns the same number to find, array, and ending point (5), but sets its start to 3 (the middle of the array (2) plus 1).
+If starting point is greater than the ending point, return -1 to the user.
+    Since starting point is less than the ending point, program tries to find the middle of the array instead.
+Program adds 3 and 5, and divides by 2 for a middle point of 4.
+The program checks the number at position 4.
+If the number at position 4 is equal to the number to be found, return the position number (4).
+    Since 4 (41) is less than 50, program returns the same number to find, array, and ending point (5), but sets its start to 5 (the middle of the array (4) plus 1).
+If starting point is greater than the ending point, return -1 to the user.
+    Since starting point is less than the ending point, program tries to find the middle of the array instead.
+Program adds 5 and 5, and divides by 2 for a middle point of 5.
+If the number at position 4 is equal to the number to be found, return the position number (5).
+    Since 5 (51) is greater than 50, program returns the same number to find, array, and starting point (5), but sets its start to 6 (the middle of the array (5) plus 1).
+If starting point is greater than the ending point, return -1 to the user.
+    Since the number has not been found, and the starting point is greater than the ending point, program returns -1 to the user.
