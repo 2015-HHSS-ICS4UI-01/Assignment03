@@ -1,5 +1,7 @@
 //SEQUENTIAL SEARCH
 
+
+
 looks for number 72 at spot one
 
 23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
@@ -180,8 +182,59 @@ looks for number 72 at the spot seven
                         XX
 
 spot seven is less than 72, searches from spot eight to fourteen
+looks for number 72 at spot eleven
 
 57, 60, 67, 72, 78, 83, 96
             XX
 
-spot eleven is 72 
+spot eleven is 72, stop search
+
+
+
+//BINARY SEARCH
+
+
+
+looks for number 41 at spot seven
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                        XX
+
+spot seven is greater than 41, searches from spot one to six
+looks for number 41 at spot three
+
+23, 27, 30, 34, 41, 51
+        XX
+
+spot three is less than 41, searches from spot four to six
+looks for number 41 at spot five
+
+34, 41, 51
+    XX
+
+spot five is 41, spot search
+
+
+
+//BINARY SEARCH
+
+
+
+looks for number 50 at spot seven
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                        XX
+
+spot seven is greater than 50, searches from spot one to six
+looks for number 50 at spot three
+
+23, 27, 30, 34, 41, 51
+        XX
+
+spot three is less than 50, searches from spot four to six
+looks for number 50 at spot five
+
+34, 41, 51
+    XX
+
+spot five is less than 
