@@ -29,7 +29,7 @@ public class A3Q5 {
      
     public static void main(String[] args) {
         A3Q5 test = new A3Q5();
-        int[] n = {24,1,5,23,87,13,2};
+        int[] n = {24,1,5,23,87,13,2,325,252464,2394037};
         //sort array
         test.insertionSort(n);
         //check if sorted
