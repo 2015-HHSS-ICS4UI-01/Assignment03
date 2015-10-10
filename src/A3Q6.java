@@ -54,3 +54,5 @@ public class A3Q6 {
     }
     
 }
+//This method isn't very useful because it makes many comparisons.
+//The amount of comparisons it makes are much more than the ones of other methods.
