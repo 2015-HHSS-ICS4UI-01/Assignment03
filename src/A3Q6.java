@@ -33,12 +33,6 @@ public class A3Q6 {
         
      
     }
-   
-        
-        
-        
-    
-    
     /**
      * @param args the command line arguments
      */

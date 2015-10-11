@@ -18,6 +18,7 @@ public class A3Q5 {
     {
          for(int i = 0; i < n.length; i++)
          {
+             //change the operation so that it would list in order of greatest to smallest
              for(int j = i; j > 0 && n[j] > n[j-1];j--)
              {
                  int temp = n[j];

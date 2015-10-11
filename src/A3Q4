@@ -1,8 +1,6 @@
-Yes, selection sort would be a better search algorithm for large arrays 
-in worst case scenarios. This is because insertion sort is best for small arrays. 
-Insertion sort will keep shuffling down a number into its correctly sorted position.
-This will take time to both find the next number and to shuffle it down to it's right position. 
-In comparison, selection sort would not take as long to undergo this process. 
-It will find the smallest number, put it in the first position and it will continue this process 
-until the search ends. Overall, it will take less time, and comparisons to do a selection sort 
-than an insertion sort. 
+No, they would approximately be the same in terms of comparisons. In selection sort, it will go through the
+whole array to determine which is the smallest number and place it in the first position of the array.
+Then it will find the second smallest number and put it into the second place in the array and this 
+process will continue until all the numbers are sorted. In insertion sort, it will go through every number
+and compare it to the previous number. If the second number is smaller, the positions will swap.
+Overall, in worst case scenarios, both of these sorting algorithms aren't the best. They both make the same many many comparisons.
