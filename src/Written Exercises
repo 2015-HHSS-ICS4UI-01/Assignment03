@@ -1,5 +1,5 @@
 A3Q1
-a)  Sequential Search for 72:           
+a)  Sequential Search for 72:        
    0     23, != 72                          
    1     27, != 72
    2     30, != 72
@@ -11,7 +11,7 @@ a)  Sequential Search for 72:
    8     60, != 72
    9     67, != 72
    10    72, == 72 ---> return 10;
-   all indexed after 10 are not checked.
+   all indexes after 10 are not checked.
 
     Binary Search for 72:
     number at middle of array is less than 72, return index of middle (7) + Binary Search for 72 in second half of array
@@ -47,13 +47,14 @@ c)  Sequential Search for 50:
    11    78, != 50
    12    83, != 50
    13    96, != 50
-        return -1;
+        return -1 (number not found);
 
     Binary Search for 50:
     number at middle of array is greater than 50, return Binary Search for 50 in the first half of the array
         number at the middle of array is less than 50, return index of middle (4) + Binary Search for 50 in the second half of the array
             number at middle of array is greater than 50, return Binary Search for 50 in the first half of the array
-                length of array is 1, number is not equal to 50, return -1.
+                length of array is 1, number is not equal to 50, 
+    total return: -1 (number not found)
 
 A3Q2:
 Bubble Sort the following array: 
@@ -82,4 +83,14 @@ Bubble Sort the following array:
     No switch in the third loop, no more sorting/looping needed
 
 A3Q3: 
-    The maximum number of comparisons that can be made is 3.  
+    The maximum number of comparisons that can be made is 3 which is found by evaluating the log base two of 7 to the nearest whole number.
+    example array: 0 1 2 3 4 5 6 (search for 0)
+    first comparison: 0 1 2 3 | 4 5 6
+        second comparison: 0 1 | 2 3
+            third comparison: 0 | 1
+    After the third comparison, 0 is found in the first half.
+
+A3Q4:
+
+Insertion sort and Selection sort both have a worst case of O(n^2). 
+Since 
