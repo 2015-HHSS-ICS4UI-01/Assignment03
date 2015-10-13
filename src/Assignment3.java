@@ -7,15 +7,15 @@
  *
  * @author branc2347
  */
-public class A3Q5 {
+public class Assignment3 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        A3Q5 test = new A3Q5();
-        int[] n = {10,9,8,7,6,5,4,3,2,1,1,1,1,1,1,1,11};
-        String[] words = {"abcdefg","abcdeff"};
+        Assignment3 test = new Assignment3();
+        int[] n = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 1, 1, 1, 1, 1, 1, 11};
+        String[] words = {"abcdefg", "abcdeff"};
 //        test.insertionSort(n);
         test.stringSort(words);
         for (int x = 0; x < words.length; x++) {
@@ -23,7 +23,7 @@ public class A3Q5 {
         }
     }
 
-    public void insertionSortDescendign(int[] n) {
+    public void insertionSortDescending(int[] n) {
         for (int x = 1; x < n.length; x++) {
             int j = x;
             while (j > 0 && n[j] > n[j - 1]) {

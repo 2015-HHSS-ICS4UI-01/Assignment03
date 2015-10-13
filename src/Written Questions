@@ -136,6 +136,25 @@ Runs another complete check of the array, even though it's sorted.
 return sorted array;
 
 A3Q3:
+X = not number
+O = number
 
-List: 1,2,3,4,5,6,7
+number == 1
+
+List: 1, 2, 3, 4, 5, 6, 7
+
+Run:
+       1, 2, 3, 4, 5, 6, 7
+                X
+       1, 2, 3, 4
+          X
+       1
+       O
+The most comparisons in binary search for a list of seven items is 3. 
+
+A3Q4:
+
+
+
+
 
