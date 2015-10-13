@@ -1,0 +1,137 @@
+1. array = {23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96}
+   
+ Sequential Search: Start at the beginning and check each number
+a) 
+  23? no, 
+  27? no, 
+  30? no, 
+  34? no, 
+  41? no, 
+  51? no, 
+  55? no,
+  57? no,
+  60? no,
+  67? no,
+  72? yes,
+  72 is in the 11th spot or array[10]
+
+b)
+  23? no, 
+  27? no, 
+  30? no, 
+  34? no, 
+  41? Yes,
+  41 is in the 6th spot or array[5]
+
+c)
+  23? no, 
+  27? no, 
+  30? no, 
+  34? no, 
+  41? no, 
+  51? no, 
+  55? no,
+  57? no,
+  60? no,
+  67? no,
+  72? no,
+  78? no,
+  83? no, 
+  96? no,
+  50 is not in the array
+
+ Binary Search: divide and check
+
+a) 14/2 = 7 and array[6] = 55
+   55 is less than 72
+   7/2 = 3 and 7+3 = 10 and array[9] = 67
+   67 is less than 72
+   7-3 = 4 and 4/2 = 2 and 10+2 = 12 and array[11] = 78
+   78 is greater than 72
+   2/2 = 1 and 12-1 = 11 and array[10] = 72
+   72 = array[10]
+   
+
+b) 14/2 = 7 and array[6] = 55
+   55 is greater than 41
+   remove 55/array[6]
+   6/2 = 3 and array[2] = 30
+   30 is less than 41
+   6/2 = 3 and 3/2 = 1 and 3+1=4 and array[3] = 34
+   34 is less than 41
+   3-1 = 2 and 2/2 = 1 and 4+1=5 and array[4] = 41
+   41 = array[4]
+
+c) 14/2 = 7 and array[6] = 55
+   55 is greater than 50
+   remove 55   
+   6/2 = 3 and array[2] = 30
+   30 is less than 50
+   3/2 = 1 and 3+1 = 4 and array[3] = 34 
+   34 is less than 50
+   3-1 = 2 and 4+1 = 5 and array[4] = 41
+   41 is less than 50 which is less than 55
+   50 is not in the array
+
+ 
+2. array = { 25  30  20  80  40  60}
+
+25 30 20 80 40 60 
+x  x
+ 
+= 25 30 20 80 40 60
+
+
+25 30 20 80 40 60
+   x  x
+ 
+= 25 20 30 80 40 60
+
+
+25 20 30 80 40 60
+      x  x
+
+= 25 20 30 80 40 60
+
+
+25 20 30 80 40 60
+         x  x
+
+ = 25 20 30 40 80 60 
+
+
+25 20 30 40 80 60
+            x  x
+ = 25 20 30 40 60 80
+
+25 20 30 40 60 80
+x  x
+ =  20 25 30 40 60 80
+
+20 25 30 40 60 80
+sorted
+
+
+
+3.   (First or Last integer)
+
+array = {23, 27, 30, 34, 41, 51, 55}
+
+23 27 30 34 41 51 55
+         x
+
+41 51 55
+   x
+
+
+55
+x
+
+
+the worst case is 3 searches
+
+
+4. in worst case, both insertion and selection sort are about the same, however for best case insertion is better. 
+   In the best case that the array is already sorted, insertion will only go through the array once, whereas selection will still go through n^2 times.
+
+
