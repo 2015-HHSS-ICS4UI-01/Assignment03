@@ -1,0 +1,179 @@
+Author: kampn2687
+A3Q1
+
+A)
+Sequential Search:
+searching for 72 from array position 1 
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+        X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+               X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                     X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                            X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                  X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                         X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                                X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                                      X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                                             X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                                                    X
+72 was found
+
+ Binary Search Algorithms
+the array was split in half ( 13/2 = 6 (rounded down))
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                  X
+it does not equal 51 and it is less than 72 so array spots 6-13 are divided into 2
+the 10th spot is then checked as it is in the middle
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                                                    X
+the tenth array spot is 72, found
+
+B)
+Sequential Search:
+searching for 41 from array position 1 
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+        X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+               X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                     X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                            X
+ Binary Search Algorithms
+the array was split in half ( 13/2 = 6 (rounded down))
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                  X
+it does not equal 51 and it is less than 41 so array spots 1-6 are divided into 2
+the 10th spot is then checked as it is in the middle
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                X
+since 41 is greater than 30,  it take 34 and 41 which are the 4th and 5th spots 
+in the array and compare them each to 41. Since 34 does not equal 41 the 5th array
+ spot must hold 41.
+
+C)
+searching for 72 from array position 1 
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+        X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+               X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                     X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                            X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                  X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                         X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                                X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                                      X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                                             X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                                                    X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                                                          X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                                                                X
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96	
+                                                                                        X
+since no of the array spots were equal to 50, the integer is not in the array
+
+ Binary Search Algorithms
+the array was split in half ( 13/2 = 6 (rounded down))
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                  X
+array spots 1-5 will be checked for 50 and the middle point is array spot 3 which is 30. 
+
+since 50 is greater than 30, 34 and 41 will be compared to 50.
+
+neither of the two integers equal 50 so the integer is not in the array
+
+
+A3Q2
+25 and 30 are in the correct place so no swap
+25  30  20  80  40  60
+
+30 and 20 swap as 20 < 30
+25 20 30 80 40 60
+
+30 and 80 do not swap as 30< 80
+25 20 30 80 40 60
+
+80 and 40 swap as 80 > 40
+25 20 30 40 80 60
+
+80 and 60 swap as 80 > 60
+25 20 30 40 60 80
+
+go back to the beginning of the array
+25 and 20 swap as 25 > 20
+20 25 30 40 60 80
+
+25 and 30 do not swap as 25 < 30
+20 25 30 40 60 80
+
+30 and 40 do not swap as 30 < 40
+20 25 30 40 60 80
+
+40 and 60 do not swap as 40 < 60 
+20 25 30 40 60 80
+
+60 and 80 do not swap as 60 < 80
+20 25 30 40 60 80
+
+array is sorted
+
+A3Q3
+The maximum number of comparison in a binary search of a list with 7 items is 4.
+ This is because there would be one to determine whether the number that is being
+ searched is greater or less than the middle number and after that there would be a
+ comparison to whether or not the number that is being searched is greater or less than
+ the middle number of the first or second half (depending whether or not the searched 
+number is greater than or less than the middle number of the array). After this there 
+would be a comparison to see whether the number that is being searched is equal to the
+ corresponding number greater than or less than the middle number of the split up array.
+ After this the number ( if in the array0 should be the same as the searched number after 
+4 comparisons as there will be a final confirmation comparison to make sure the number is
+ in the array.
+Searching for 28:
+3 7 11 20 21 25 28
+             X
+28 is greater than 20 so the program knows that if it is in the array it will be in the last 3
+ slots of the array
+
+3 7 11 20 21 25 28
+                         X
+Now 28 will be compared to 25 as it is in the middle of the last 3 array spots
+28 is greater than 25 so it will now check the array spot on the end to see if they equal
+
+3 7 11 20 21 25 28
+                              X 
+28 is equal to 28 so it has found 28 and knows it is in the last array spot
+  
+A3Q4
+Selection sort will be faster as it writes in the array O(n2) times as you have to copy and move
+ ints around where as selection sort only enters onto the array O(n) times so with a very large
+ array, selection sort will prove to be faster. Although insertion sort is better for shorter
+ arrays, but will prove inferior to selection sort with larger arrays.
+
+
+
+
+
