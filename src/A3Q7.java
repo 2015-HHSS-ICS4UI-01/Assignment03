@@ -29,7 +29,7 @@ public void insertionSort(String[]n)
      */
     public static void main(String[] args) {
         A3Q7 test = new A3Q7();
-        String[] n = {"zoo","tru","test"};
+        String[] n = {"computer","science","is","fun"};
         test.insertionSort(n);
        
         for(int i = 0; i < n.length; i++)

@@ -1,6 +1,4 @@
-No, they would approximately be the same in terms of comparisons. In selection sort, it will go through the
-whole array to determine which is the smallest number and place it in the first position of the array.
-Then it will find the second smallest number and put it into the second place in the array and this 
-process will continue until all the numbers are sorted. In insertion sort, it will go through every number
-and compare it to the previous number. If the second number is smaller, the positions will swap.
-Overall, in worst case scenarios, both of these sorting algorithms aren't the best. They both make the same many many comparisons.
+No, they would approximately be the same in terms of comparisons. The worst case scenario 
+for both sorting methods would be if the numbers in the array were arranged in 
+descending order. Since the worst case scenario for both is the same, it is evident that 
+they will have the same amount of comparisons.

@@ -10,6 +10,7 @@
  */
 public class A3Q6 {
     public void bucketSort(int[] n){
+        //initialize the tracker array
         int[] tracker = new int[101];
         //go through the tracker array and assign all spots a 0
         for (int i = 0; i < tracker.length; i++) {
@@ -46,7 +47,6 @@ public class A3Q6 {
         }
        
     }
-    
+    //This method isn't very useful because it makes many comparisons.
+    //The amount of comparisons it makes are much more than the ones of other methods.
 }
-//This method isn't very useful because it makes many comparisons.
-//The amount of comparisons it makes are much more than the ones of other methods.
