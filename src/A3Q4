@@ -1,0 +1,4 @@
+No, they would approximately be the same in terms of comparisons. The worst case scenario 
+for both sorting methods would be if the numbers in the array were arranged in 
+descending order. Since the worst case scenario for both is the same, it is evident that 
+they will have the same amount of comparisons.
