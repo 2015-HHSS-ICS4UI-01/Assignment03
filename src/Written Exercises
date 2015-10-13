@@ -93,4 +93,5 @@ A3Q3:
 A3Q4:
 
 Insertion sort and Selection sort both have a worst case of O(n^2). 
-Since 
+Insertion sort is usually faster than selection sort since it only does the required comparisons whereas selection sort compares every pair.
+However, in the worst case for larger arrays, they will have approximately the same run time.
