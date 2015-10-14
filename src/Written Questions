@@ -1,0 +1,166 @@
+A3Q1:
+    a) 72
+
+        i) sequential search: 
+            -the number is 72
+            -is the number == 23 - no
+                 ""           27 - no
+                              30 - no
+                              34 - no
+                              41 - no  
+                              51 - no
+                              55 - no
+                              57 - no
+                              60 - no
+                              67 - no
+                 ""           72 - yes
+            -return index in array where number == 72;
+
+        ii) binary search
+            -the number is 72
+            - X = not number
+            - O = number
+                -check number halfway: 
+                23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                            X
+                -is the number greater or less than: 57 - greater
+                -check number halfway in the new array:
+                     60, 67, 72, 78, 83, 96
+                                 X
+                -is the number greater or less than: 78 - less
+                -check number halfway in the new array:
+                    60, 67, 72
+                        X
+                -is the number greater or less than: 67 - greater
+                -check number halfway in the new array:
+                    72
+                    O
+                -return index in array where number == 72;
+      b) 41
+
+          i) sequential search: 
+            -the number is 41
+            -is the number == 23 - no
+                 ""           27 - no
+                              30 - no
+                              34 - no
+                              41 - yes  
+            -return index in array where number == 41; 
+
+          ii) binary search
+            -the number is 41
+            - X = not number
+            - O = number
+                -check number halfway: 
+                23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                            X
+                -is the number greater or less than: 57 - less
+                -check number halfway in the new array:
+                     23, 27, 30, 34, 41, 51, 55
+                                 X
+                -is the number greater or less than: 34 - greater
+                -check number halfway in the new array:
+                    41, 51, 55
+                        X
+                -is the number greater or less than: 51 - less
+                -check number halfway in the new array:
+                    41
+                    O
+                -return index in array where number == 41;
+
+       c) 50
+
+            i) sequential search: 
+            -the number is 50
+            -is the number == 23 - no
+                 ""           27 - no
+                              30 - no
+                              34 - no
+                              41 - no  
+                              51 - no
+                              55 - no
+                              57 - no
+                              60 - no
+                              67 - no
+                 ""           72 - no
+                              78 - no
+                              83 - no
+                              96 - no
+            -return -1; none of the numbers in the array equal the number sought
+
+            ii) binary search
+            -the number is 50
+            - X = not number
+            - O = number
+                -check number halfway: 
+                23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                            X
+                -is the number greater or less than: 57 - less
+                -check number halfway in the new array:
+                     23, 27, 30, 34, 41, 51, 55
+                                 X
+                -is the number greater or less than: 34 - greater
+                -check number halfway in the new array:
+                    41, 51, 55
+                        X
+                -is the number greater or less than: 51 - less
+                -check number halfway in the new array:
+                    41
+                    X
+                -return -1; none of the numbers in the array equal the number sought
+
+A3Q2:
+
+Original array: 25, 30, 20, 80, 40, 60
+
+Check: is 25>30 - no
+Check: is 30>20 - yes
+Swap positions between 30 and 20
+-- 25, 20, 30, 80, 40, 60 --
+Check: is 30>80 - no
+Check: is 80>40 - yes
+Swap positions between 80 and 40
+-- 25, 20, 30, 40, 80, 60 --
+Check: is 80>60 - yes
+Swap positions between 80 and 60
+-- 25, 20, 30, 40, 60, 80 --
+Check: is 25>20 - yes
+Swap positions between 25 and 20
+-- 20, 25, 30, 40, 60, 80 --
+Check: is 25>30 - no
+Check: is 30>40 - no
+Check: is 40>60 - no
+Check: is 60>80 - no
+
+Runs another complete check of the array, even though it's sorted.
+return sorted array;
+
+A3Q3:
+
+X = not number
+O = number
+
+number == 1
+
+List: 1, 2, 3, 4, 5, 6, 7
+
+Run:
+       1, 2, 3, 4, 5, 6, 7
+                X
+       1, 2, 3, 4
+          X
+       1
+       O
+
+The most comparisons in binary search for a list of seven items is 3. This occurs when either the number sought
+is the first number, or if the number sought is not in the array. 
+
+A3Q4:
+
+In the worst case, both methods of sorting will be the same. Both insertion sort and selection sort have a runtime of O(n^2).
+Therefore, when the array is sorted backwards(worst case), especially with large arrays, both arrays will undergo the same amount of runs through the loops,
+meaning the same amount of comparisons. 
+
+
+
+
