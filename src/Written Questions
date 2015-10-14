@@ -136,6 +136,7 @@ Runs another complete check of the array, even though it's sorted.
 return sorted array;
 
 A3Q3:
+
 X = not number
 O = number
 
@@ -150,10 +151,15 @@ Run:
           X
        1
        O
-The most comparisons in binary search for a list of seven items is 3. 
+
+The most comparisons in binary search for a list of seven items is 3. This occurs when either the number sought
+is the first number, or if the number sought is not in the array. 
 
 A3Q4:
 
+In the worst case, both methods of sorting will be the same. Both insertion sort and selection sort have a runtime of O(n^2).
+Therefore, when the array is sorted backwards(worst case), especially with large arrays, both arrays will undergo the same amount of runs through the loops,
+meaning the same amount of comparisons. 
 
 
 
