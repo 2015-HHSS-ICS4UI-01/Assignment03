@@ -21,13 +21,21 @@ public class A3Q7 {
         int c = 1;
         String[] words = new String[c];
 
-        for (int i = 0; i < c; i++) {
+        while(true){
             System.out.println("plz enter a word:");
-            words[i] = in.nextLine();
-            if (words[i].equals("DONE")) {
+            words[c] = in.nextLine();
+            c++;
+            
+            if (words.equals("DONE")){
                 break;
             }
         }
+//        for (int i = 0; !words[i].equals("DONE"); i++) {
+//            System.out.println("plz enter a word:");
+//            words[i] = in.nextLine();
+//            c++;
+//        }
+        
         String temp = "";
         for (int i = 1; i < words.length; i++) {
             if (words[i - 1].compareTo(words[i]) > 0) {
