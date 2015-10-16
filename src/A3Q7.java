@@ -16,26 +16,18 @@ public class A3Q7 {
      */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-
-        System.out.println("Pro-tip: once you're done type 'DONE'");
-        int c = 1;
-        String[] words = new String[c];
-
-        while(true){
-            System.out.println("plz enter a word:");
-            words[c] = in.nextLine();
-            c++;
-            
-            if (words.equals("DONE")){
-                break;
-            }
-        }
-//        for (int i = 0; !words[i].equals("DONE"); i++) {
-//            System.out.println("plz enter a word:");
-//            words[i] = in.nextLine();
-//            c++;
-//        }
         
+        String [] a = new String [5];
+        
+        System.out.println("enter words");
+        for(int i = 0; i < a.length; i++){
+            System.out.print(": ");
+        }
+        
+        wordInsertionSort(a);
+    }
+    
+    public void wordInsertionSort(String[] words){
         String temp = "";
         for (int i = 1; i < words.length; i++) {
             if (words[i - 1].compareTo(words[i]) > 0) {
