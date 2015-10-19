@@ -22,19 +22,22 @@ public class A3Q7 {
         System.out.println("enter words");
         for(int i = 0; i < a.length; i++){
             System.out.print(": ");
+            a[i] = in.nextLine();
         }
         
         wordInsertionSort(a);
     }
     
-    public void wordInsertionSort(String[] words){
-        String temp = "";
+    public static void wordInsertionSort(String[] words){
+        String temp = "";   
+        for (int j = 0; j < words.length; j++){
         for (int i = 1; i < words.length; i++) {
             if (words[i - 1].compareTo(words[i]) > 0) {
                 temp = words[i];
                 words[i] = words[i - 1];
                 words[i - 1] = temp;
             }
+        }
         }
         for (int i = 0; i < words.length; i++) {
             System.out.print(words[i] + ", ");
