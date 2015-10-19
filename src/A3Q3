@@ -1,0 +1,10 @@
+The maximum amount of comparisons for a list with 7 items is half the list (in a whole number). So for 7 there would be 3 comparisons.
+
+
+1  2  3  4  5  6  7
+         X
+1  2  3
+   X
+1
+X
+

@@ -1,0 +1,3 @@
+Yes Selection sort would be faster than insertion sort.
+if you have a large array, insertion sort could lose itself by grouping up larger numbers at the beginning.
+whereas selection sort moves the larger numbers to the end of the array (or vice versa), keeps all numbers heading in their respective end of the array.
