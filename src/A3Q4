@@ -1,0 +1,3 @@
+ insertion sort would be better because it has less comparisons. This allows the sort to go faster and sort quicker.
+
+This is because selection sort must scan the rest of the array in order to finish

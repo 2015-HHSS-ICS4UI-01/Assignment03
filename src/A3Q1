@@ -1,0 +1,113 @@
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+
+Sequential Search:
+a) 72
+Is 23 equal to 72?
+no, move on
+Is 27 equal to 72?
+no, move on
+Is 30 equal to 72?
+no, move on
+Is 34 equal to 72?
+no, move on
+Is 41 equal to 72?
+no, move on
+Is 51 equal to 72?
+no, move on
+Is 55 equal to 72?
+no, move on
+Is 57 equal to 72?
+no, move on
+Is 60 equal to 72?
+no, move on
+Is 67 equal to 72?
+no, move on
+Is 72 equal to 72?
+yes, end the program and return that 72 is at the 10th spot
+
+b)41
+Is 23 equal to 41?
+no, move on
+Is 27 equal to 41?
+no, move on
+Is 30 equal to 41?
+no, move on
+Is 34 equal to 41?
+no, move on
+Is 41 equal to 41?
+yes, end the program and return that 41 is at the 4th spot
+
+
+c)50
+Is 23 equal to 50?
+no, move on
+Is 27 equal to 50?
+no, move on
+Is 30 equal to 50?
+no, move on
+Is 34 equal to 50?
+no, move on
+Is 41 equal to 50?
+no, move on
+Is 51 equal to 50?
+no, move on
+Is 55 equal to 50?
+no, move on
+Is 57 equal to 50?
+no, move on
+Is 60 equal to 50?
+no, move on
+Is 67 equal to 50?
+no, move on
+Is 72 equal to 50?
+no, move on
+Is 78 equal to 50?
+no, move on
+Is 86 equal to 50?
+no, move on
+Is 93 equal to 50?
+no, move on
+50 was not found, end the program
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+Binary Search:
+a)72
+
+14/2 is 7, spot 7 is 57
+is 57 bigger than 72, no
+spot 7 is now the start [57, 60, 67, 72, 78, 83, 96]
+7/2 is 3, spot 3 is 72
+is 72 bigger than 72, no it equals 72
+you found your number
+
+b)41
+
+14/2 is 7, spot 7 is 57
+is 57 bigger than 41, yes
+cut off anything after spot 7 [23, 27, 30, 34, 41, 51, 55]
+7/2 is 3, spot 3 is 34
+is 34 bigger than 41, no
+spot 3 is now the start [34, 41, 51, 55, 57]
+5/2 is 3, spot 3 is 55
+is 55 bigger than 41, yes
+cut off anything after spot 3 [34, 41, 51]
+3/2 is 1, spot 1 is 41
+is 41 bigger than 41, no it equals 41
+you found your number  
+
+c)50
+
+14/2 is 7, spot 7 is 57
+is 57 bigger than 50, yes
+cut off anything after spot 7 [23, 27, 30, 34, 41, 51, 55]
+7/2 is 3, spot 3 is 34
+is 34 bigger than 50, no
+spot 3 is now the start [34, 41, 51, 55, 57]
+5/2 is 2, spot 2 is 51
+is 51 bigger than 50, yes
+cut off anything after spot 2 [34, 41]
+2/2 is 1, spot 1 is 41
+is 41 bigger than 50, no
+start at spot 1
+only 1 number remains
+50 was not found
