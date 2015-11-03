@@ -1,0 +1,274 @@
+A3Q1
+Sequential Search
+a) 72
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+        X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+            X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                    X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                        X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96      
+                            X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96 
+                                    X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                        X
+Found at the tenth position
+
+
+
+b) 41
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+x
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+        X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+            X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                X
+Found at the fourth position
+
+
+
+c) 50
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+        X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+            X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                    X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                        X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                            X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                    X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                        X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                            X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                                X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                                    X
+Not found
+"50" Was not found in the array
+
+
+Binary Search
+
+a) 72
+
+Last int + first int/2 = middle number
+Middle position = 6
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                        X
+Not found
+
+72 > 55 so, it goes to next position right of 55
+7 + 13/2 = 10
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                        X
+Found at position 10
+
+
+b) 41
+
+Last int + first int/2 = middle number
+Middle position = 6
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                        X
+Not found
+
+41 < 55, so it moves to the next position left of 55
+5 + 0/2 = 2.5 = 2
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+        X
+Not found
+
+41 > 30, so it moves to the next position right of 30, and the end point moves 1 position left of 55
+3 + 5/2 = 4
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                X
+Found at position 4
+
+
+c) 50
+
+Last int + first int/2 = middle number
+Middle position = 6
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                        X
+Not found
+
+50 < 55, so it moves to the position left of 55
+5 + 0/2 = 2.5 = 2
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+        X
+Not found
+
+50 > 30, so it moves to the next position right of 30, and the end point moves 1 position left of 55
+3 + 5 /2 = 4
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                X
+Not found
+
+50 > 41, so the start end point move to position 5 (51)
+5 + 5/2 = 5
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                    X
+Not found. 50 is not in the array
+
+
+A3Q2
+
+25  30  20  80  40  60
+x   x
+25<30 so it stays
+
+25  30  20  80  40  60
+    x   x
+30>20 so it switches
+
+25  20  30  80  40  60
+        x   x
+30<80 so it stays
+
+25  20  30  80  40  60
+            x   x
+80>40 so it switches
+
+25  20  30  40  80  60
+                x   x
+80>60 so it switches
+
+25  20  30  40  60  80
+
+It goes through and checks again
+
+20  25  30  40  60  80
+x   x
+25>20 so it switches
+
+20  25  30  40  60  80
+    x   x
+25<30 so it stays
+
+20  25  30  40  60  80
+        x   x
+30<40 so it stays
+
+20  25  30  40  60  80
+            x   x
+40<60 so it stays
+
+20  25  30  40  60  80
+                x   x
+60<80 so it stays
+
+20  25  30  40  60  80
+
+It goes through and checks again
+It is now sorted
+
+
+A3Q3
+
+Example (looking for number 19)
+20  25  30  40  60  80 90
+x                      x
+
+Comparison 1                      
+start + end/2
+0 + 6/2 = 3
+
+Comparison 2
+20  25  30  40  60  80  90
+x           x
+0 + 3/2 = 1.5 = 1
+
+Comparison 3
+20  25  30  40  60  80  90
+x   x 
+0 + 1/2 = 0.5 = 0
+
+Comparison 4
+20  25  30  40  60  80  90
+x
+0+0/2 = 0
+
+Comparison 5
+return -1
+
+Therefore there are a maximum of 5 comparisons that can be made. This is only happens if it is
+searching for a number that is not in the array.
+
+
+A3Q4
+
+Both sorting algorithms are inefficient compared to other ways of sorting. But if you compare
+the speed of the two for a large array, they are nearly the same speed. However, for a smaller
+array, selection sort will be slightly faster than insertion sort.
+
+
+
+
+
+
+
