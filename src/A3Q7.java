@@ -26,7 +26,6 @@ public class A3Q7 {
         System.out.println("Input your words to be sorted.");
         for (int i = 0; i < n; i++) {
             word[i] = input.nextLine();
-
         }
 
         insertionSort(word);
@@ -36,13 +35,14 @@ public class A3Q7 {
 
     static String insertionSort(String[] word) {
         for (int i = 1; i < word.length; i++) {
-            for (int k = i; word[k].compareTo(word[k - 1]) < 0 && k > 0; k--) {
+            int k = i;
+            if (word[k].compareTo(word[k - 1]) < 0 && k > 0) {
                 String temp = word[k];
                 word[k] = word[k - 1];
                 word[k - 1] = temp;
+                k--;
             }
         }
         return null;
-
     }
 }
