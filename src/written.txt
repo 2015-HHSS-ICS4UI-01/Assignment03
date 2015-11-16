@@ -1,0 +1,228 @@
+Assignment 3 Question 1
+a) 72 
+Sequential Search
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+    X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+         X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+             X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                 X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                     X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                         X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                             X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                 X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                     X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                         X
+72 was found in the array at position 10.
+
+Binary Search
+
+Calculate the middle of the array
+int mid = (0+13)/2 = 6
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                         X
+Not found 
+X<72,   mid = (7+13)/2 = 10
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                         X
+72 was found at position 10 int the array.
+
+b) 41
+
+Sequential Search
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+     X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+         X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+             X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                 X
+41 was found in the array at position 4.
+
+Binary Search
+
+int mid = (0+13)/2 = 6
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                         X
+Not found
+X>41
+mid = (0+5)/2 = 2
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+         X
+Not found
+X<41
+mid = (3+5)/2 = 4
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                 X
+41 was found in the array at position 4.
+c) 50
+
+Sequential Search
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+     X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+         X
+Not found 
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+             X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                 X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                     X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                         X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                             X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                 X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                     X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96                                         
+                                         X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                             X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                                 X
+Not found
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                                                     X
+Not found
+Since the int 50 was not found, return "Not found" to the user to show that the int 50 is not in the array.
+
+Binary Search
+
+int mid = (0+13)/2 = 6
+
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                         X
+Not found
+X>50
+mid = (0+5)/2 = 2
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+         X
+Not found
+X<50
+mid = (3+5)/2 = 4
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                 X
+Not found
+X<50
+mid = (5+5)/2 = 5
+23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96
+                     X
+Not found, int 50 is not in the array, no spots left to check.
+
+
+Assignment 3 Question 2
+
+25  30  20  80  40  60
+X   X
+25<30 stays as is.
+25  30  20  80  40  60
+     X   X
+30>20 switch them.
+25  20  30  80  40  60
+         X   X
+30<80 stays as is.
+25  20  30  80  40  60
+             X   X
+80>40 switch them.
+25  20  30  40  80  60
+                 X   X
+80>60 switch them. Reached the end of the numbers so start back at the beginning.
+25  20  30  40  60  80
+X   X               
+25>20 switch them.
+20  25  30  40  60  80
+     X   X           
+25<30 stays as is.
+20  25  30  40  60  80
+         X   X  
+30<40 stays as is.
+20  25  30  40  60  80
+             X   X
+40<60 stays as is.
+20  25  30  40  60  80
+                 X   X
+60<80 stays as is.
+Since one switch was made, run through one more time to check to make sure it is sorted
+20  25  30  40  60  80
+
+Sorted.
+
+Assignment 3 Question 3
+
+Example (searching for the number 7)
+
+mid = (0+7)/2= 3
+0 1 2 3 4 5 6
+    X
+mid = (4+7)/2= 5
+0 1 2 3 4 5 6
+        X
+mid = (6+7)/2= 6
+0 1 2 3 4 5 6
+          X
+
+mid = (7+7)/2= 7
+0 1 2 3 4 5 6
+            X
+
+return -1
+
+In a array of 7 positions the maximum number of comparison that it would go through would be 5, the final
+is looking for a spot that the array cannot continue to, so the final comparison returns nothing.
+
+Assignment 3 Question 4
+
+They are both slow compared to other sorting algorithms that exist, but in comparing the two sorting methods 
+insertion and selection sort, in the worst case for large arrays, they run nearly at the same speed as one 
+another in smaller arrays, selection sort runs faster, but once you get to larger arrays, they start 
+running at the same speed as on another. On deciding which to use is just up to the users preference.
+
+
