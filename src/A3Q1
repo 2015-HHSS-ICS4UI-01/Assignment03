@@ -1,0 +1,111 @@
+1   
+    
+    
+        Sequential search:  The program starts off by looking at the first position
+                            in the array and if the number is equal to the number 
+                            being looked for, then the program stops running and returns the position of 
+                            where the number is found in the array. Otherwise, if the 
+                            number that is being looked for is not found, then 
+                            program would move on to the next position in the array 
+                            and check if it is the number that is being looked for.
+
+        a) Array = {23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96} 
+
+                            Position 1 - Is 23 = 72? No. The program moves on to the next position in the array.
+                            Position 2 - Is 27 = 72? No. The program moves on to the next position in the array. 
+                            Position 3 - Is 30 = 72? No. The program moves on to the next position in the array. 
+                            Position 4 - Is 34 = 72? No. The program moves on to the next position in the array. 
+                            Position 5 - Is 41 = 72? No. The program moves on to the next position in the array. 
+                            Position 6 - Is 51 = 72? No. The program moves on to the next position in the array. 
+                            Position 7 - Is 55 = 72? No. The program moves on to the next position in the array. 
+                            Position 8 - Is 57 = 72? No. The program moves on to the next position in the array. 
+                            Position 9 - Is 60 = 72? No. The program moves on to the next position in the array. 
+                            Position 10 - Is 67 = 72? No. The program moves on to the next position in the array.     
+                            Position 11 - Is 72 = 72? Yes. The program returns what position the number is found in the array.
+
+        b) Array = {23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96} 
+
+                            Position 1 - Is 23 = 41? No. The program moves on to the next position in the array.
+                            Position 2 - Is 27 = 41? No. The program moves on to the next position in the array. 
+                            Position 3 - Is 30 = 41? No. The program moves on to the next position in the array. 
+                            Position 4 - Is 34 = 41? No. The program moves on to the next position in the array. 
+                            Position 5 - Is 41 = 41? No. The program moves on to the next position in the array. 
+
+        c) Array = {23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96} 
+
+                            Position 1 - Is 23 = 50? No. The program moves on to the next position in the array.
+                            Position 2 - Is 27 = 50? No. The program moves on to the next position in the array. 
+                            Position 3 - Is 30 = 50? No. The program moves on to the next position in the array. 
+                            Position 4 - Is 34 = 50? No. The program moves on to the next position in the array. 
+                            Position 5 - Is 41 = 50? No. The program moves on to the next position in the array. 
+                            Position 6 - Is 51 = 50? No. The program moves on to the next position in the array. 
+                            Position 7 - Is 55 = 50? No. The program moves on to the next position in the array. 
+                            Position 8 - Is 57 = 50? No. The program moves on to the next position in the array. 
+                            Position 9 - Is 60 = 50? No. The program moves on to the next position in the array. 
+                            Position 10 - Is 67 = 50? No. The program moves on to the next position in the array.     
+                            Position 11 - Is 72 = 50? No. The program moves on to the next position in the array.  
+                            Position 11 - Is 78 = 50? No. The program moves on to the next position in the array.  
+                            Position 11 - Is 83 = 50? No. The program moves on to the next position in the array.  
+                            Position 11 - Is 96 = 50? No. The program moves on to the next position in the array.
+
+                            The program returns that the number does not exist in the array.
+                            
+        Binary search:  The program starts off in the middle of the array and then checks if the number 
+                        being searched for is bigger than or smaller than the number in the middle of the array.
+                        If the number being searched for is bigger than the number in the middle of the array then 
+                        the number is on the right side of the middle number. If the number being searched for is 
+                        bigger than the number in the middle of the array then the number is on the right side of 
+                        the middle number.   
+
+        a)  Array = {23, 27, 30, 34, 41, 51, 55, 57, 60, 67, 72, 78, 83, 96} 
+
+                                                 
+                        Get Length of array and divide by 2 to find middle spot. 13/2 = 7(rounded).
+                        The number in spot 7 = 57.
+                        Does 72 = 57? No. 
+                        Since 72 greater then 55 go to the right side of the array.
+                        
+                        New Array = {57, 60, 67, 72, 78, 83, 96}
+                        Get Length of array and divide by 2 to find middle spot. 6/2 = 3.
+                        What is the number in spot 3 of new array? 72. 
+                        Is 72 equal to 72? Yes. Return the spot where the number is located in the array.
+
+                    b)  Find 41.
+                        Get Length of array and divide by 2 to find middle spot. Divide 13 by 2 = 7.
+                        The number in spot 7 = 57.
+                        Does 41 = 50? No.
+                        Since 41 is less then 57 go to the left side of the array.
+
+                        New Array = {23, 27, 30, 34, 41, 51, 57}
+                        Get Length of array and divide by 2 to find middle spot. 6/2 = 3.
+                        What is the number in spot 3 of new array? 34. 
+                        Since 41 is greater then 34 go to the right side of the array.
+                        
+                        New Array = {34,41,51}
+                        Get Length of array and divide by 2 to find middle spot. 2/2 = 1.
+                        What is the number in spot 1 of new array? 41. 
+                        Is 41 equal to 41? Yes. Return the spot where the number is located in the array.
+
+                    c)  Find 50. 
+                        Get Length of array and divide by 2 to find middle spot. Divide 13 by 2 = 7(rounded).
+                        The number in spot 7 = 57.
+                        Does 50 = 57? No.
+                        Since 50 is less then 57 go to the left side of the array.
+
+                        New Array = {23, 27, 30, 34, 41, 51}
+                        Get Length of array and divide by 2 to find middle spot. 6/2 = 3.
+                        What is the number in spot 3 of new array? 34. 
+                        Since 50 is greater then 34 go to the right side of the array.
+                        How long is the array? 5. 
+
+                        New Array = {34,41,51}
+                        Get Length of array and divide by 2 to find middle spot. 2/2 = 1.
+                        What is the number in spot 1 of new array? 41. 
+                        Since 50 is greater then 41 go to the right side of the array.
+
+                        New Array = [51]
+                        Since 50 does not equal 51, the number does not exist in the array.
+
+
+
+

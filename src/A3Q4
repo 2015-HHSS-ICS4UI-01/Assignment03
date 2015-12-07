@@ -1,0 +1,4 @@
+
+Since both array go through the whole array in order to sort it, the run time would be equal so they would have similar run times. 
+
+Also, botch sorting methods have the exact same worst case; if the numbers are in descending order. So they would both have similar run times.
